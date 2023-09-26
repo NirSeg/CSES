@@ -3,15 +3,12 @@
 using namespace std;
 #define int int64_t
 
-// get a positive integer
-void weirdAlgorithm(int num) {
-    cout << num << " ";
-    if (num == 1)
-        return;
-    else if (num % 2 == 0)
-        weirdAlgorithm(num / 2);
-    else
-        weirdAlgorithm(3 * num + 1);
+void weirdAlgorithm(int n) {
+    while (n > 1) {
+        cout << n << " ";
+        n = n % 2 == 0 ? n / 2 : 3 * n + 1;
+    }
+    cout << n;
 }
 
 signed main() {
