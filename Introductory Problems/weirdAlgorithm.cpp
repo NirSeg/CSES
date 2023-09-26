@@ -12,7 +12,7 @@ void weirdAlgorithm(int n) {
 }
 
 signed main() {
-    int num;
-    cin >> num;
-    weirdAlgorithm(num);
+    int n;
+    cin >> n;
+    weirdAlgorithm(n);
 }
