@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+#define int int64_t
 using vi = vector<int>;
 
 #define rep(i, a, b) for(int i = a; i < b; ++i)
@@ -25,8 +26,8 @@ signed main() {
     cin >> n >> m >> k;
     vi apps(n);
     vi apts(m);
-    rep(i, 0, n){ scanf("%d", &apps[i]); }
-    rep(i, 0, m){ scanf("%d", &apts[i]); }
+    rep(i, 0, n){ scanf("%lld", &apps[i]); }
+    rep(i, 0, m){ scanf("%lld", &apts[i]); }
     sort(all(apps));
     sort(all(apts));
     cout << apartments(apps, apts, k);
