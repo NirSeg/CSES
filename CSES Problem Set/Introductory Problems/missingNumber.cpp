@@ -17,6 +17,6 @@ signed main() {
     int a, n;
     cin >> n;
     vb arr(n);
-    rep(i, 0, n - 1) { cin >> a; arr[a - 1] = true; }
+    rep(i, 0, n - 1) { scanf("%lld", &a); arr[a - 1] = true; }
     missingNumber(arr);
 }
