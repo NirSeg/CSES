@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+#define int int64_t
 using vi = vector<int>;
 
 #define rep(i, a, b) for(int i = a; i < b; ++i)
@@ -21,7 +22,7 @@ signed main() {
     int n, x;
     cin >> n >> x;
     vi p(n);
-    rep(i, 0, n) { scanf("%d", &p[i]); }
+    rep(i, 0, n) { scanf("%lld", &p[i]); }
     sort(all(p));
     cout << ferrisWheel(p, x);
 }
