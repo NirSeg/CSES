@@ -5,7 +5,7 @@ using namespace std;
 
 void grayCode(string &str, int n, int l) {
     if (l == n)
-        cout << str << endl;
+        printf("%s\n", str.c_str());
     else {
         grayCode(str, n, l + 1);
         str[l] = (str[l] == '1') ? '0' : '1';
