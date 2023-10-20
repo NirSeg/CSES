@@ -18,6 +18,6 @@ signed main(){
     int len;
     cin >> len;
     vi arr(len);
-    rep(i, 0, arr.size()) { cin >> arr[i]; }
+    rep(i, 0, len) { scanf("%lld", &arr[i]); }
     cout << increasingArray(arr);
 }
