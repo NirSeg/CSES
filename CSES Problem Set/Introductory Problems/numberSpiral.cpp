@@ -8,14 +8,14 @@ using namespace std;
 void numberSpiral(int n) {
     rep(i, 0, n) {
         int y, x;
-        cin >> y >> x;
+        scanf("%lld %lld", &y, &x);
         int layer = (y > x) ? y : x;
         int idxInLayer = (y < x) ? y : x;
         int baseNumLayer = (layer - 1) * (layer - 1);
         if (layer % 2 == 0)
-            cout << (x == idxInLayer ? baseNumLayer + 2 * layer - idxInLayer : baseNumLayer + idxInLayer) << endl;
+            printf("%lld\n", x == idxInLayer ? baseNumLayer + 2 * layer - idxInLayer : baseNumLayer + idxInLayer);
         else
-            cout << (y == idxInLayer ? baseNumLayer + 2 * layer - idxInLayer : baseNumLayer + idxInLayer) << endl;
+            printf("%lld\n", y == idxInLayer ? baseNumLayer + 2 * layer - idxInLayer : baseNumLayer + idxInLayer);
     }
 }
 
