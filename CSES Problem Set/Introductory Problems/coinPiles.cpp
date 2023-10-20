@@ -8,8 +8,10 @@ using namespace std;
 
 void coinPiles(int t) {
     int a, b;
-    while(t--)
-        cout << (a > b * 2 || b > a * 2 || (a + b) % 3 != 0 ? "NO" : "YES") << endl;
+    while(t--){
+        scanf("%lld %lld", &a, &b);
+        printf("%s\n", a > b * 2 || b > a * 2 || (a + b) % 3 != 0 ? "NO" : "YES");
+    }
 }
 
 signed main() {
