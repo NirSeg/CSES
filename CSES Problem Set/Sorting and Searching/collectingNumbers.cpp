@@ -18,6 +18,7 @@ int collectingNumbers(vi &nums, int n){
     return rounds;
 }
 
+
 signed main(){
     int n;
     cin >> n;
