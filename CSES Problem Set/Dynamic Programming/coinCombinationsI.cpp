@@ -5,7 +5,7 @@ typedef long long ll;
 
 #define rep(i, a, b) for(int i = a; i < b; i++)
 
-ll coinCombinationI(ll x, const vector<ll> &coins, ll n) {
+ll coinCombinationsI(ll x, const vector<ll> &coins, ll n) {
     vector<ll> dp(x + 1, 0);
     ll mod = 1e9 + 7;
     dp[0] = 1;
@@ -24,5 +24,5 @@ int main(){
     vector<ll> coins(n);
     rep(i, 0, n) cin >> coins[i];
     sort(coins.begin(), coins.end());
-    cout << coinCombinationI(x, coins, n);
+    cout << coinCombinationsI(x, coins, n);
 }
