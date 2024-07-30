@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-#define rep(i, a, b) for(ll i = a; i < b; i++)
+#define rep(i, a, b) for (ll i = a; i < b; i++)
 
 ll editDistance(string str1, string str2){
     ll last, curr, n = ll(str1.size()), m = ll(str2.size());
