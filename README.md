@@ -1,1 +1,1 @@
-All the competetive programing problems i've solved from the CSES website.
+All the competetive programing problems I've solved from the CSES website.
